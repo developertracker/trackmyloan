@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="title" content="">
+<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+<link rel="shortcut icon" type="image/png" href="http://kohinoorsquare.in/favicon.png"/>
+
+<title>ICICI Track My Loan</title>
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="css/style.css"> 
+
+</head>
+<body>
+<div class="header notitle">
+	<div class="title">Track your Disbursement Status</div>
+    <div class="brand"><img src="images/logo.png" alt="icici logo" /></div>
+</div>
+<div class="mainContent">
+	<div class="content">
+        <div class="leftSide"><img src="images/track-loan-figure.png" alt="track my loan" /></div>
+        <div class="rightSide">
+	
+            <form action="slide1.html" method="post" onsubmit="validateForm();"  name="searchApplication" class="searchForm">
+                <div class="form-control ">
+                    <input type="text" name="dob" id="dob"  placeholder="Date of Birth"  required title="This field should not be left blank."
+                    />
+                </div>
+                <div class="optiontext">AND</div>
+                <div class="form-control ">
+                    <input type="text" name="mobileNumber" id="mob" maxlength="10" placeholder="Mobile Number"  required  onKeyPress="return isNumber()" />
+                </div>
+                <div class="mandatetext">Please enter the mobile number mentioned in the application</div>
+                <div class="form-control otp-input">
+                     <div class="otpEntry">
+                        <input type="password" class="input-control" placeholder="*" maxlength="1" oninvalid="this.setCustomValidity('Enter valid OTP')"
+                        oninput="this.setCustomValidity('')" required onKeyPress="return isNumber()" />
+                        <input type="password" class="input-control" placeholder="*" maxlength="1" oninvalid="this.setCustomValidity('Enter valid OTP')"
+                        oninput="this.setCustomValidity('')" required onKeyPress="return isNumber()" />
+                        <input type="password" class="input-control" placeholder="*" maxlength="1" oninvalid="this.setCustomValidity('Enter valid OTP')"
+                        oninput="this.setCustomValidity('')" required onKeyPress="return isNumber()" />
+                        <input type="password" class="input-control" placeholder="*" maxlength="1" oninvalid="this.setCustomValidity('Enter valid OTP')"
+                        oninput="this.setCustomValidity('')" required onKeyPress="return isNumber()" />
+                        <input type="password" class="input-control" placeholder="*" maxlength="1" oninvalid="this.setCustomValidity('Enter valid OTP')"
+                        oninput="this.setCustomValidity('')" required onKeyPress="return isNumber()" />
+                        <input type="password" class="input-control" placeholder="*" maxlength="1" oninvalid="this.setCustomValidity('Enter valid OTP')"
+                        oninput="this.setCustomValidity('')" required onKeyPress="return isNumber()" />
+                    </div> 
+                    <div class="resendOTP">
+                        <label>Didn't recieve OTP?</label>
+                        <label class="btnResentOTP">Resend OTP</label>
+                    </div>
+                </div>
+                <div class="form-control loginbtn otpbtn">
+                    <input type="submit" id="sendotp" name="sendotp" value="Send OTP"  />
+                </div>
+            
+                <div class="form-control loginbtn submitbtn">
+                    <input type="submit" id="submit" name="Login" value="Login" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+<script src="js/main.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script>
+    $( function() {
+        $( "#dob" ).datepicker({
+            dateFormat: 'dd/mm/yy',
+            changeMonth: true,
+            changeYear: true,
+            maxDate: 0,
+            yearRange: "-120:+0",
+            onSelect: function(dateText, inst) {
+                $('#appNumber, #refNumber').addClass('disabled');
+            }
+        });
+    });
+	function isNumber(evt) {
+		evt = (evt) ? evt : window.event;
+		var charCode = (evt.which) ? evt.which : evt.keyCode;
+		if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+			return false;
+		}
+		return true;
+    }
+
+</script>
+</body>
+</html>

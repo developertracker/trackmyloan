@@ -1,0 +1,1247 @@
+@font-face {
+	font-family: 'Zurich BT';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/ZURCHN.TTF') format('ttf'),
+		 url('../fonts/ZURCHN.woff') format('woff');
+}
+@font-face {
+	font-family: 'Zurich BT BOLD';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/ZURCHBI_1.TTF') format('ttf'),
+		 url('../fonts/zurchbi_1-webfont.woff') format('woff'),
+		 url('../fonts/zurchbi_1-webfont.woff2') format('woff2');
+		 
+}
+@font-face {
+	font-family: 'zurichcondensed';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/zurichbt-romancondensed-webfont.woff') format('woff'),
+		 url('../fonts/zurichbt-romancondensed-webfont.woff2') format('woff2');
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin:0;
+	padding:0;
+}
+::-webkit-input-placeholder { /* Edge */
+	color:#C2C1C0;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #C2C1C0;
+  }
+  
+  ::placeholder {
+	color: #C2C1C0;
+  }
+  .nobroder{
+	border: 0!important;
+	padding:0!important;
+	margin: 0!important;
+  }
+  .no-margin{
+	  margin: 0!important;
+  }
+.header{
+	background:url(../images/top-bar.jpg) no-repeat;
+	background-size: cover;
+	width:100%;
+	height:90px;
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+	position: relative;
+}
+.header .title{
+	color:#ffffff;
+	font-family: 'Zurich BT';
+	font-size:30px;
+	font-weight:bold;
+	font-style:italic;
+	padding-left:50px;
+}
+.header .brand{
+	padding-right:50px;
+}
+.content{
+  	display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.leftSide{
+	 flex: 1;
+	 text-align:center;
+	 align-items:center;
+	 justify-content:center;
+	display: flex; 
+}
+.leftSide img{
+	width:100%;
+	height: 100%;
+	display: block;
+	object-fit:cover;
+}
+.rightSide{
+	 text-align:center;
+	 background:#f48220;
+	 position: relative;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+	 display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  	
+	align-items:center;
+	justify-content:center;
+	font-family:'zurichcondensed';
+	flex-direction: column;
+}
+.rightSide form{
+	width: 300px;
+	margin: 0 auto;
+}
+.optionLabel{
+	color:#ffffff;
+	display:block;
+	text-align:center;
+	font-size:22px;
+	margin-bottom: 25px;
+}
+.searchForm .form-control{
+	margin-bottom:15px;
+	margin-top: 15px;
+	position: relative;
+	text-align: left;
+}
+.searchForm .form-control:first-child{
+	margin-top: 0;
+}
+.searchForm label{
+	color:#961B1E;
+	display:block;
+	text-align:left;
+	font-size:24px;
+	padding-left:30px;
+	padding-bottom:10px;
+	letter-spacing: 1px;
+	position: absolute;
+	right:25px;
+	top:20px;
+}
+.searchForm label.labelnote{
+	padding:10px 0 0 0;
+	font-size: 18px;
+}
+.searchForm .form-control.form-number{
+	margin-bottom: 20px;
+}
+.searchForm .mobNumber{
+	display: flex;
+	justify-content: center;
+	
+}
+.searchForm .mobNumber label{
+	padding-left: 0;
+	text-align: center;
+}
+.searchForm .mobNumber .countryCode{
+	margin-right: 50px;
+}
+.searchForm .mobNumber .countryCode input{
+	width: 38px;
+	
+}
+.searchForm .mobNumber .mobileNumber input{
+	width: 115px;
+}
+.searchForm input{
+	background:#ffffff;
+	border:5px solid #b02a30;
+	border-radius:50px;
+	height:70px;
+	width:300px;
+	font-size:24px;
+	font-family:'zurichcondensed';
+	padding:0 25px;
+	outline:none;
+	letter-spacing: 2px;
+	box-sizing: border-box;
+	color: #616262;
+}
+.searchForm input[type=submit]{
+	background:#b02a30;
+	border:5px solid #ffffff;
+	border-radius:50px;
+	height:70px;
+	width:200px;
+	font-size:20px;
+	color:#ffffff;
+	padding:0;
+	font-family:'zurichcondensed';
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+.searchForm .otpEntry{
+   text-align:center;
+   background:#ffffff;
+	border:5px solid #b02a30;
+	border-radius:50px;
+	height:60px;
+	width:300px;
+}
+.searchForm .otpEntry input{
+    border: 0;
+    outline: 0;
+	border-radius:0;
+    background: transparent;
+    border-bottom: 4px solid #9f9f9f;
+    width: 25px;
+    text-align:center;
+    padding :0;
+    margin-left:10px;
+	height:25px;
+	font-family:'zurichcondensed';
+	color:#b02a30;
+    margin-top: 18px;
+    padding-top: 5px;
+}
+.resendOTP{
+	display:flex;
+	align-items:flex-start;
+	justify-content: space-between;
+	margin-top: 5px;
+}
+.resendOTP label{
+	padding:0;
+	font-size:16px;
+	color: #ffffff;
+	position: relative;
+	right: 0;
+	top:0;
+}
+.resendOTP label.btnResentOTP{
+	padding-bottom:0;
+	float: right;
+}
+.searchForm .otpEntry input::-webkit-input-placeholder { /* Edge */
+  color:#b02a30;
+}
+.searchForm .nobottom{
+	margin-bottom:10px;
+}
+.searchForm .otpEntry input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:#b02a30;
+}
+
+.searchForm .otpEntry input::placeholder {
+  color:#b02a30;
+}
+.searchForm .form-control.loginbtn{margin: 30px auto;text-align: center;cursor: pointer;}
+/*=======================Inner page============================*/
+.wrapper{
+	max-width:1300px;
+	margin:0 auto;
+	border:1px solid;
+}
+.innerHeader{
+	height:95px;
+	box-shadow: 0 8px 6px -6px #000;
+}
+.loanBrand{
+	margin-left:20px;
+}
+.innerContent{
+	
+}
+.banner{
+	background:no-repeat;
+	height:441px;
+	max-width:1300px;
+}
+.stepA{
+	background-image:url(../images/slide3-banner.jpg);
+}
+.stepB1{
+	background-image:url(../images/slide4-banner.jpg);
+}
+.stepB2{
+	background-image:url(../images/slide5-banner.jpg);
+}
+.stepC1{
+	background-image:url(../images/slide6-banner.jpg);
+}
+.stepC2{
+	background-image:url(../images/slide7-banner.jpg);
+}
+.stepC3{
+	background-image:url(../images/slide8-banner.jpg);
+}
+.stepD1{
+	background-image:url(../images/slide9-banner.jpg);
+}
+.stepD2{
+	background-image:url(../images/slide10-banner.jpg);
+}
+.stepE1{
+	background-image:url(../images/slide11-banner.jpg);
+}
+.stepE2{
+	background-image:url(../images/slide12-banner.jpg);
+}
+.stepE3{
+	background-image:url(../images/slide13-banner.jpg);
+}
+.stepE2-c{
+	background-image:url(../images/slide14-banner.jpg);
+}
+.step1{
+	background-image:url(../images/slide1n-banner.jpg);
+}
+.bannerText{
+	color:#183e6c;
+	font-size:60px;
+	font-family:'zurichcondensed';
+	padding-left:20px;
+	padding-top:20px;
+}
+.bannerText small{
+	line-height:normal;
+    display:block;
+    font-size: 68%;
+}
+.stepsDetails{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-top:-97px;
+}
+.steps{
+	width:137px;
+	height:149px;
+	margin-left:25px;
+	background:url(../images/steps-bg.png) no-repeat;
+}
+
+.steps.completed,.steps.l2,.steps.inprocess{
+	background:url(../images/steps-active-bg.png)
+}
+.steps.git{
+	background:url(../images/steps-active-bg.png)
+}
+.steps:first-child.git{
+	background:url(../images/steps-first-bg.png)
+}
+.steps.git .stepStatus span{
+	background-image:url(../images/in-process-ico.png)
+}
+.steps:first-child{
+	background-image:url(../images/steps-first-bg.png);
+	margin-left:0;
+}
+.steps:first-child.l2{
+	background-image:url(../images/steps-first-l2-bg.png);
+}
+.steps:last-child{
+	background-image:url(../images/steps-last-bg.png);
+}
+.steps.completed:last-child .stepStatus{
+    height: auto;
+    line-height: 12px;
+    margin-top: 2px;
+    letter-spacing: -0.2px;
+	justify-content: flex-start;
+	padding-left: 10px;
+}
+.steps.completed:last-child .stepStatus:last-child{
+	margin-top: 10px;
+	line-height: 16px;
+}
+.steps.completed:last-child,.steps.l2:last-child,.steps.inprocess:last-child{
+	background-image:url(../images/steps-last-active-bg.png);
+}
+.stepNo{
+	margin:-38px auto;
+	padding:10px 0 0 0;
+}
+.steps:first-child .stepNo{
+	padding:10px 0 0 10px;
+}
+.steps:last-child .stepNo{
+	padding:10px 2px 0 0;
+}
+.stepNo span{
+	background:#ffffff;
+	border:4px solid #9e9d93;
+	width:57px;
+	height:57px;
+	border-radius:50%;
+	margin:0 auto;
+	text-align:center;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-size:55px;
+	font-family:'zurichcondensed';
+	color:#a8a69c;
+}
+.steps.inprocess .stepNo span{
+	color:#F38020;
+	border:4px solid #F38020;
+}
+.steps.l2 .stepNo span{
+	color:#AF2830;
+	border:4px solid #AF2830;
+}
+.steps.completed .stepNo span{
+	color:#119C49;
+	border:4px solid #119C49;
+}
+.steps.completed{
+	background-image:url(../images/steps-completed-bg.png);
+}
+.steps.l2{
+	background-image:url(../images/steps-l2-bg.png);
+}
+.steps:first-child.completed{
+	background-image:url(../images/steps-first-bg-completed.png);
+}
+.steps:last-child.l2{
+	background-image:url(../images/steps-last-bg-l2.png);
+}
+.steps:last-child.completed{
+	background-image:url(../images/steps-last-bg-completed.png);
+}
+.stepName{
+	font-family:'zurichcondensed';
+	font-size:16px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin:40px auto 0;
+	height:58px;
+	text-align:center;
+	color:#ffffff;
+}
+.stepStatus{
+	font-size:12px;
+	color:#0a4c80;
+	font-family:'zurichcondensed';
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	position:relative;
+	height:52px;
+	font-weight:bold;
+}
+.stepStatus span{
+	background:url(../images/not-started-ico.png) no-repeat;
+	padding-left:22px;
+	height:16px;
+}
+.steps.inprocess .stepStatus span{
+	background-image:url(../images/in-process-ico.png);
+}
+.steps.l2 .stepStatus span{
+	background-image:url(../images/getintouch-ico.png);
+}
+.steps.completed .stepStatus span{
+	background-image:url(../images/completed-ico.png);
+}
+.loanDetails{
+	text-align:center;
+	font-family: 'Zurich BT';
+	font-size:12px;
+	color:#231f20;
+	margin:15px auto;
+	position: relative;
+	width: 770px;
+	border:1px solid #cccccc;
+	border-radius: 10px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.loanText{
+	width: 100%;
+	background:#F18021;
+	color: #ffffff;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	padding:8px 0;
+	font-size: 14px;
+}
+.wrapText{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top:8px;
+}
+.wrapText:first-child{
+	margin-top: 0;
+}
+.loanAccount{
+	border-right:1px solid #ffffff;
+	padding-right: 20px;
+	margin-right: 20px;
+}
+
+.loanStatus{
+	text-align: center;
+	padding:20px 20px;
+	font-size: 14px;
+}
+
+span.newline{
+	display: block;
+}
+.levelDetails{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-top:25px;
+	margin-bottom:20px;
+}
+.level{
+	background: no-repeat;
+	height:58px;
+	padding-left:45px;
+	padding-top:5px;
+	margin-right:50px;
+}
+.level1{
+	background-image:url(../images/lvl1-ico.png);	
+}
+.level2{
+	background-image:url(../images/lvl2-ico.png);	
+}
+.level3{
+	background-image:url(../images/lvl3-ico.png);
+	margin-right:0;	
+}
+.levelName{
+	font-family: 'Zurich BT';
+	font-weight:bold;
+	font-style:italic;
+	font-size:16px;
+	color:#616262;
+}
+.exName{
+	color:#808184;
+	font-size:11px;
+	font-family:'zurichcondensed';
+}
+.rs{
+	max-width:6px;
+}
+.deskonly{
+	display: block;
+}
+.mobonly{
+	display: none;
+}
+.options{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 40px;
+	color: #ffffff;
+	font-family: 'zurichcondensed';
+	font-weight: bold;
+	font-size: 18px;
+	width:300px;
+	position: relative;
+	letter-spacing: 2px;
+}
+.options .opt2{
+	margin-left: 0px;
+}
+.options input[type="radio"] {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    width: 20px;
+    height: 25px;
+}
+.options .opt{
+  position: relative;
+}
+.opt label{
+	display: block;
+	position: relative;
+	-webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+	padding-left: 35px;
+}
+.opt input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border-radius: 50%;
+  border:2px solid #ffffff;
+}
+
+/* On mouse-over, add a grey background color */
+label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+label input:checked ~ .checkmark {
+  background-color: transparent;
+  	
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+label .checkmark:after {
+ 	top: 3px;
+	left: 3px;
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+	background: white;
+}
+.historyBtn{
+	position: absolute;
+	top:-12px;
+	right: -16px;
+
+}
+.optiontext{
+	font-size:24px;
+	color: #ffffff;
+	font-family:'zurichcondensed';
+	text-align: left;
+	padding-left: 30px;
+}
+.c2 label{
+	right:40px;
+}
+.c3,.c4{
+	width: 226px;
+}
+.searchForm .c3 input,.searchForm .c4 input{
+	width: 226px;
+}
+.c3 label{
+	right: 30px;
+}
+.c4 label{
+	right: 20px;
+}
+.mandatetext{
+	color: #ffffff;
+	font-size: 16px;
+	text-align: left;
+}
+.otpbox{
+	display: none;
+}
+.appform{
+	padding-bottom:0;
+}
+input.disabled{
+	pointer-events: none;
+	opacity:0.5;
+}
+.c1 label,.c2 label,.c3 label{
+	padding-left: 0;
+}
+.uploadform .form-control label{
+	padding-right: 5px;
+}
+.uploadform .form-control{
+	width:278px;
+	float: left;
+}
+.uploadform .form-control:first-child{
+	width:223px;
+}
+.uploadform .form-control:last-child{
+	width:255px;
+	float: left;
+}
+.uploadform form{
+	display: inline-block;
+	width: 100%;
+}
+.loanamt{
+	margin-top: 10px;
+}
+.loanamt.la{
+	margin-top: 0;
+}
+.loanstatusform{
+	padding: 20px 0;
+}
+.laststeps .stepStatus{
+	font-size: 10px!important;
+	line-height: 10px!important;
+	padding-left: 16px!important;
+}
+
+.laststeps .stepStatus.s2{
+	line-height:16px!important;
+	margin-top: 1px!important;
+}
+.laststeps .stepStatus.s3{
+	margin-top: -2px!important;
+}
+.laststeps .stepStatus span{
+	background-size: 12px;
+	padding-left:15px;
+}
+label.reupload strong{
+	background: #119C49!important;
+}
+.otp-input,.submitbtn{
+	display: none;
+}
+
+@media screen and (max-width: 1919px) {
+	.header{
+		height:78px;
+	}
+	.header .title{
+		font-size:26px;
+	}
+	.searchForm label{
+		font-size:20px;
+	}
+	.rightSide form{
+		width: 270px;
+	}
+	.searchForm input{
+		width:270px;
+		height:60px;
+		font-size: 20px;
+	}
+	.searchForm input[type=submit]{
+		width:160px;
+		font-size:20px;
+		height: 60px;
+	}
+	.searchForm .otpEntry{
+		width: 270px;
+		height:50px;
+	}
+	.searchForm .otpEntry input{
+		margin-top:10px;
+		font-size:20px;
+	}
+	.resendOTP label.btnResentOTP{
+		font-size:14px;
+	}
+	.innerHeader{
+		height:95px;
+	}
+	.options{
+		width:270px;
+		font-size:16px;
+	}
+	.c3, .c4{
+		width: 205px;
+	}
+	.searchForm .c3 input, .searchForm .c4 input{
+		width: 205px;
+	}
+	.optiontext{
+		font-size: 18px;
+	}
+	.mandatetext{
+		font-size: 14px;
+	}
+	.resendOTP label{
+		font-size: 14px;
+	}
+	.opt label{
+		padding-top: 5px;
+	}
+}
+@media screen and (max-width: 1440px) {
+	.header{
+		height:60px;
+	}
+	.header .title{
+		font-size:20px;
+	}
+	.header .brand img{
+		max-width:127px;
+	}
+	.bannerText {
+		font-size: 40px;
+		padding-left: 15px;
+		padding-top: 15px;
+		line-height: normal;
+	}
+	.rightSide form{
+		width: 225px;
+	}
+	.searchForm label{
+		font-size:12px;
+		top:15px;
+	}
+	.searchForm .mobNumber .countryCode{
+		margin-right: 30px;
+	}
+	.searchForm .mobNumber .countryCode input{
+		width:25px;
+	}
+	.searchForm .mobNumber .mobileNumber input{
+		width:100px;
+	}
+	.searchForm label.labelnote{
+		font-size: 16px;
+	}
+	.searchForm input{
+		font-size:16px;
+		width: 225px;
+		height:44px;
+		border-width: 3px;
+	}
+	.searchForm input[type=submit]{
+		width: 130px;
+		font-size: 16px;
+		height: 44px;
+		border-width: 3px;
+	}
+	.searchForm .otpEntry{
+		width:219px;
+		height:38px;
+		border-width: 3px;
+	}
+	.searchForm .otpEntry input{
+		margin-top:12px;
+		font-size:16px;
+		width:16px;
+		height: 16px;
+		border-bottom: 2px solid #9f9f9f;
+	}
+	.innerHeader{
+		height:78px;
+	}
+	.loanBrand img{
+		max-width:145px;
+	}
+	.loanBrand.mobonly{
+		text-align: center;
+		padding-top:10px;
+		margin: 0;
+		
+	}
+	.loanBrand.mobonly p{
+		color: #B02A30;
+		font-family: 'Zurich BT BOLD';
+		font-style: italic;
+		font-size: 26px;
+		padding: 25px 0 0 0;
+	}
+	.loanBrand.mobonly p span.mytext{
+		color: #074C7F;
+		position: absolute;
+		top: 20px;
+		left: 80px;
+		font-size: 22px;
+		font-style: normal;
+		font-family: 'zurichcondensed';
+		font-weight: bold;
+	}
+	.loanBrand.mobonly p span.apptext{
+		padding-left: 40px;
+	}
+	.banner{
+		height:385px;
+		background-position:center center;
+	}
+	.options{
+		max-width:225px;
+		font-size: 14px;
+	}
+	.options input[type="radio"] {
+		-ms-transform: scale(1.3);
+		-webkit-transform: scale(1.3);
+		transform: scale(1.3);
+		width: 20px;
+		height: 20px;
+	}
+	.mandatetext{
+		font-size: 12px;
+	}
+	.c2 label{
+		right: 35px;
+	}
+	.c3,.c4,.searchForm .c3 input, .searchForm .c4 input{
+		width: 178px;
+	}
+	.resendOTP label{
+		top:0;
+		font-size: 12px;
+	}
+	.resendOTP label.btnResentOTP{
+		font-size: 12px;
+	}
+	.searchForm .form-control{
+		margin: 10px 0;
+	}
+	.optiontext{
+		font-size: 14px;
+	}
+	.options{
+		margin-bottom: 25px;
+	}
+}
+@media screen and (max-width: 1280px) {
+
+	span.newline{
+		display: inline;
+	}
+	.loanDetails{
+		width: 900px;
+	}
+	.loanStatus{
+		padding:15px;
+	}
+	.loanStatus br{
+		display: none;
+	}
+}
+@media screen and (max-height: 725px) {
+	.banner{
+		height:320px;
+		background-position: center center;
+	}
+}
+@media screen and (max-height: 640px) {
+	.banner{
+		height:300px;
+		background-position: center center;
+	}
+}
+@media screen and (max-width: 1300px) {
+	.leftSide{
+		align-items: flex-end;
+	}
+	.leftSide img{
+		height: auto;
+	}
+	.innerContent{
+		overflow: hidden;
+	}
+	
+}
+@media screen and (max-width: 990px) {
+	.mainContent{
+		background: url(../images/page-bg.jpg) 0px 0;
+		background-size: cover;
+	}
+	.header .brand{
+		padding-right:10px;
+	}
+	.header .title{
+		padding-left:10px;
+		font-size:12px;
+	}
+	.notitle .title{
+		font-size:20px;
+		padding-left:20px;
+	}
+	.notitle .brand{
+		margin-left:auto;
+		padding-right: 20px;
+	}
+	.content{
+		display:block;
+		height:auto!important;
+	}
+	.leftSide{
+		display:block;
+	}
+	.rightSide{
+		display:block;
+		padding:50px 0;
+	}
+
+	.optionLabel{
+		font-size: 16px;
+	}
+	.searchForm .mobNumber .countryCode{
+		margin-right:10px ;
+	}
+	.searchForm .mobNumber .mobileNumber input{
+		width: 93px;
+	}
+
+
+	.deskonly{
+		display: none;
+	}
+	.mobonly{
+		display: block;
+	}
+	.innerContent{
+		  background:url(../images/mob-bg.jpg) bottom no-repeat;
+		  background-size: 100%;
+		 overflow: hidden;
+	}
+	.bannerText{
+		font-size: 24px;
+		text-align: center;
+		font-weight: bold;
+		padding-bottom: 20px;
+		padding-left: 0;
+		padding-top: 0;
+	}
+	.loanBrand{
+		text-align: center;
+		padding-top:0px;
+	}
+	.banner{
+		height: 250px;
+		width: 100%;
+		background-size: cover;
+	}
+	.stepsDetails{
+		flex-wrap: wrap;
+		margin-top: 20px;
+	}
+	.steps{
+		height: 110px;
+		width: 101px;
+		background-size: contain!important;
+		margin-bottom: 20px;
+	}
+	.stepNo{
+		padding:26px 0 0 1px;
+	}
+	.stepNo span{
+		width: 48px;
+		height: 48px;
+		font-size: 25px;
+	}
+	.steps:first-child .stepNo{
+		padding:26px 0 0 7px;
+	}
+	.stepNo span {
+		width: 27px;
+		height: 27px;
+		font-size: 18px;
+	}
+	.stepName{
+		font-size: 10px;
+		line-height: 12px;
+		margin: 44px auto 0;
+		height: 34px;
+	}
+	.stepStatus{
+		font-size: 8px;
+		height:30px;
+	}
+	.stepStatus span{
+		height: 7px;
+		background-size: contain;
+		padding-left: 8px;
+		line-height: 7px;
+	}
+	.steps:last-child .stepName{
+		padding: 0 5px;
+	}
+	.steps:last-child .stepNo {
+		padding: 26px 2px 0 1px;
+	}
+	.loanDetails{
+		font-size: 12px;
+		padding: 0;
+		margin: 10px auto 25px;
+		display: flex;
+		width:540px;
+	}
+	.wrapText{
+		flex-direction:column;
+		margin: 0 auto;
+		line-height: 25px;
+	}
+	.loanAccount{
+		border: 0;
+	}
+	.loanText{
+	}
+
+	.levelDetails{
+		width: 320px;
+		margin: 15px auto 0;
+		padding-bottom: 70px;
+	}
+	.level{
+		background-size: 25px;
+		padding-left: 30px;
+		margin-right: 30px;
+		
+	}
+	.level:last-child{
+		margin-right: 0;
+	}
+	.levelName{
+		font-size: 10px;
+	}
+	.exName{
+		font-size: 10px;
+	}
+	.options{
+		max-width:225px;
+		margin: 0 auto 25px;
+	}
+	.options input[type="radio"] {
+		-ms-transform: scale(1.3);
+		-webkit-transform: scale(1.3);
+		transform: scale(1.3);
+		width: 18px;
+		height:15px;
+	}
+
+	.historyBtn img{
+		max-width: 190px;
+	}
+	
+	.laststeps .stepStatus{
+		font-size: 7px!important;
+		padding-left:15px!important;
+		margin-top:10px!important;
+		line-height: 5px;
+	}
+	
+	.laststeps .stepStatus.s2{
+		margin-top:2px!important;
+		line-height: 7px!important;
+	}
+	.laststeps .stepStatus.s3{
+		margin-top: 2px!important;
+		line-height:7px!important;
+	}
+	.laststeps .stepStatus span{
+		background-size:7px;
+		padding-left:15px;
+		height: auto;
+	}
+	.uploadform .form-control{
+		width: 100%!important;
+		justify-content: flex-end;
+		margin-top: 10px;
+	}
+	.uploadform .form-control:first-child{
+		margin-top: 0;
+	}
+}
+@media screen and (max-width:767px) {
+	.notitle .title{
+		font-size:12px;
+		padding-left:10px;
+	}
+	.notitle .brand{
+		padding-right: 10px;
+	}
+	.banner{
+		height:264px;
+		background-size:cover;
+		background-position:center center;
+	}
+	.stepsDetails {
+		width: 280px;
+		margin: 40px auto 0;
+	}
+	.steps:nth-child(3){
+		margin-left: 0;
+	}
+	.steps:last-child{
+		margin-left: 0;
+	}
+	.wrapText{
+		flex-direction: column;
+		margin-top: 0;
+		line-height: 20px;
+	}
+	.loanAccount{
+		padding: 0;
+		margin: 0;
+		border: 0;
+	}
+	.loanDetails{
+		flex-direction: column;
+		height: auto;
+		width: 90%;
+	}
+	.loanText{
+		width: 100%;
+		height: auto;
+		padding: 10px 0;
+
+		border-bottom-left-radius:0;
+		border-right:0;
+		border-bottom:1px solid #cccccc;
+	}
+	.loanStatus{
+		width: auto;
+		line-height:17px;
+		padding:15px;
+	}
+	.header .brand img{
+		max-width: 90px;
+	}
+	.historyBtn{
+		position: relative;
+		top: 0;
+		margin: 15px 0 0 0;
+		right: 0;
+	}
+	.statusText{
+		display: block;
+	}
+	.loanStatus br{display: none;}
+}
+@media screen and (max-width:420px) {
+	.banner{
+		height:128px;
+	}
+}
